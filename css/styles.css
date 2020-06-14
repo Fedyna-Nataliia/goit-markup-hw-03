@@ -27,6 +27,15 @@ html {
 /* вторичный цвет фона #F5F4FA; */
 /* цвет футера #2F303A; */
 
+.container-header {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid tomato;
+}
 
 body {
     background-color: var(--primary-white-color);
@@ -139,6 +148,12 @@ body {
 }
 
 /* Section */
+
+.section {
+    padding-top: 0;
+    padding-bottom: 94px;
+}
+
 .ul {
     list-style: none;
 }
@@ -185,12 +200,15 @@ body {
 
 }
 
-
 .feature-list .link {
     color: var(--primary-text-color);
     text-decoration: none;
 }
 
+.feature-list p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
 /* Examples */
 
@@ -211,14 +229,26 @@ body {
 
 /* Team */
 .section-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
     background-color: var(--background-color-sekondary);
 }
 
 .team-list .title {
+    margin-bottom: 10px;
+
     color: var(--title-tex-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+    text-align: center;
+}
+
+.team-list p{
+    margin-top: 0;
+    margin-bottom: 16px;
+
     text-align: center;
 }
 
@@ -227,7 +257,10 @@ body {
     text-decoration: none;   
 }
 
-
+.logo-list {
+    margin-top: 0;
+    margin-bottom: 24px;
+}
 
 .logo-list .link:hover,
 .logo-list .link:focus{
@@ -250,6 +283,11 @@ body {
 
 
 /* Стилі для Portfolio */
+.filter-list {
+    margin-top: 51px;
+    margin-bottom: 34px;
+}
+
 .filter-list .link {
     color: var(--title-text-color);
     text-decoration: none;
@@ -270,7 +308,7 @@ body {
     
     border-radius: 4px;
     padding: 6px 22px;
-    min-width: ;
+    min-width: 29px;
 
 
     color: var(--title-tex-color);
@@ -286,9 +324,15 @@ body {
     background-color: var(--accent-color);
 }
 
-
+.example-lis {
+    padding-top: 0;
+    padding-bottom: 94px;
+}
 
 .example-list .title {
+margin-top: 0;
+margin-bottom: 4px;
+
     color: var(--title-tex-color);
     font-weight: 700;
     font-size: 18px;
@@ -304,6 +348,9 @@ body {
 
 
 .galery-subtitle {
+    margin-top: 0;
+    margin-bottom: 20px;
+
     color: var(--primary-text-color);
     font-weight: 400;
     font-size: 16px;
@@ -316,6 +363,9 @@ a {
 }
 
 .galery-text {
+    margin-top: 0;
+    margin-bottom: 0;
+
     color: var(--primary-text-color);
     font-weight: 400;
     font-size: 18px;
