@@ -108,8 +108,16 @@ body {
 }
 
 /* Hero */
-.hero {
+
+.section-hero {
+    margin-top: 0;
+    margin-bottom: 94px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
     text-align: center;
+
+    background-color: cadetblue;
 }
 
 .hero-title {
@@ -121,6 +129,11 @@ body {
     font-size: 44px;
     line-height: 1.36;
     
+}
+
+.button-hero {
+    padding: 10px 32px;
+    min-width: 200px;
 }
 
 /* Button */
@@ -142,16 +155,12 @@ body {
     text-decoration: none;
 }
 
-.button-hero {
-    padding: 10px 32px;
-    min-width: 200px;
-}
-
 /* Section */
 
 .section {
-    padding-top: 0;
-    padding-bottom: 94px;
+    margin-top: 0;
+    margin-bottom: 94px;
+   
 }
 
 .ul {
