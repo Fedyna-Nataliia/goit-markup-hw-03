@@ -360,13 +360,15 @@ body {
 /* Footer */
 
 .footer {
+    
+    padding-top: 45px;
+    padding-bottom: 21px;
+
     background-color: var(--footer-color);
 }
 
-.section-footer {
-    padding-top: 45px;
-    padding-bottom: 21px;
-   
+.footer-container {
+    display: flex;
 }
 
 .footer .logo {
@@ -377,8 +379,11 @@ body {
 .address {
     color: var(--primary-white-color);
     text-decoration: none;
-    font-style: inherit;
-   
+    font-style: inherit; 
+}
+
+.adress-list .link {
+    color: var(--primary-text-color);
 }
 
 .footer-text {
@@ -400,15 +405,24 @@ body {
 }
 
 .filter-list {
-    margin-top: 51px;
+    display: flex;
+    margin-top: 0;
     margin-bottom: 34px;
+    margin-right: auto;
+    margin-left: auto;
+
+    width: 611px;
 }
 
-.filter-list .link {
-    width: ;
+.filter-list .link:not(:last-child) {
+    margin-right: 8px;
+} 
+
+.filter-list .link{
+    display: block;
 
     color: var(--title-text-color);
-    text-decoration: none;
+    text-decoration: none;   
 }
 
 .filter-list .link:hover,
