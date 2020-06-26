@@ -17,6 +17,7 @@ html {
     --footer-color: #2F303A;
     --background-color: #E5E5E5;
     --background-color-sekondary: #F5F4FA;
+    --header-logo-color: #000000;
 }
 
 /* цвет основного текста #757575; */
@@ -26,6 +27,7 @@ html {
 /* цвет фона #E5E5E5; */
 /* вторичный цвет фона #F5F4FA; */
 /* цвет футера #2F303A; */
+/* цвет лого хедера  #000000; */
 
 
 body {
@@ -62,7 +64,7 @@ body {
 .logo  {
     margin-right: 85px;
 
-    color: #000000;  
+    color: var(--header-logo-color);  
     font-family: "Raleway", sans-serif; 
     font-weight: bold;
     font-size: 26px;
@@ -167,12 +169,10 @@ body {
 /* Button */
 
 .button {
-
     display: inline-block;
     border-radius: 4px;
     padding: 10px 29px;
     
-
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     font-family: inherit;
@@ -334,6 +334,7 @@ body {
 } 
 
 .logo-list {
+    display: flex;
     margin-top: 0;
     margin-bottom: 24px;
 }
@@ -345,16 +346,27 @@ body {
 
 /* Clients */
 
+.section-client {
+    padding-top: 62px;
+    padding-bottom: 126px;
+}
+
 .client-list {
     display: flex;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap; 
+   
+
 }
   
 .client-list .link {
     display: block;
     width: calc((100% - 150px) / 6);
-    text-decoration: none;   
+    text-decoration: none;  
+    
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    text-align: center;
+    
 }
 
 .client-list .link:not(:last-child) {
@@ -381,8 +393,6 @@ body {
 .footer-address {
    padding-top: 60px;
     padding-bottom: 60px;
-
-
 }
 
 .footer-address .logo {
